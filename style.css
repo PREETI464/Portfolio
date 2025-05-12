@@ -147,3 +147,27 @@ button:nth-child(2):hover{
 transform: scaleX(1);
 transform-origin: bottom left;
 }
+@media print {
+  body {
+    font-size: 14px;
+  }
+  
+  .navList {
+    display: none; /* Hide navigation links in PDF */
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media print {
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center image */
+  }
+}
